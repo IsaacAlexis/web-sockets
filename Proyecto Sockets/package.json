@@ -1,0 +1,26 @@
+{
+  "name": "proyecto-sockets",
+  "version": "1.0.0",
+  "description": "Practica 2 Unidad 3 Prog Web 2 Web  Sockets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaacAlexis/web-sockets.git"
+  },
+  "keywords": [
+    "sockets"
+  ],
+  "author": "Isaac Alexis Maldonado Holguin",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/IsaacAlexis/web-sockets/issues"
+  },
+  "homepage": "https://github.com/IsaacAlexis/web-sockets#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}

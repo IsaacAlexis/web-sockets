@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-app.use(express.static('public/index.html'));
+app.use(express.static('public'));
 
 app.get('/',function(req, res){
     res.status(200).send("Hola Mundo");

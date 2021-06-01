@@ -11,6 +11,12 @@ app.get('/',function(req, res){
 
 io.on('connection', function(socket){
     console.log('Alguien se ha conectado con socket');
+
+    socket.emit('messages',{
+        id: 1,
+        texto:"Hola soy un mensaje",
+        autor: "Isaac Alexis Maldonado Holguin"
+    })
 });
 
 server.listen(3002,function(){

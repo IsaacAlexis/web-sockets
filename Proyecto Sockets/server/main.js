@@ -16,7 +16,7 @@ io.on('connection', function(socket){
         id: 1,
         texto:"Hola soy un mensaje",
         autor: "Isaac Alexis Maldonado Holguin"
-    })
+    });
 });
 
 server.listen(3002,function(){

@@ -22,6 +22,7 @@ io.on('connection', function(socket){
 
     socket.on('new-message', function(data){
         messages.push(data);
+        io.sockets.emit('messages',messages);
     });
 });
 

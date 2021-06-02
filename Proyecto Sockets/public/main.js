@@ -9,10 +9,10 @@ function render(data){
 
     var html = data.map(function(elem,index){
         return(`<div>
-                    <strong>${data.autor}</strong>
-                    <em> ${data.texto}</em>
+                    <strong>${elem.autor}</strong>
+                    <em> ${elem.texto}</em>
                 </div>`);
-    }).join("");
+    }).join(" ");
 
     document.getElementById('messages').innerHTML = html;
 }

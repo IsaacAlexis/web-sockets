@@ -12,5 +12,12 @@
 <body>
     <h1>Web Sockets Index</h1>
     <div id="messages"></div>
+    <br>
+
+    <form onsubmit="return addMessage(this)">
+        <input type="text" id="username" placeholder="Tu nombre">
+        <input type="text" id="texto" placeholder="Cuentanos algo">
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>

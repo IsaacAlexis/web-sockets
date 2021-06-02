@@ -6,10 +6,13 @@ socket.on('messages',function(data){
 });
 
 function render(data){
-    var html = `<div>
+
+    var html = data.map(function(elem,index){
+        return(`<div>
                     <strong>${data.autor}</strong>
                     <em> ${data.texto}</em>
-                </div>`; 
+                </div>`);
+    }).join("");
 
     document.getElementById('messages').innerHTML = html;
 }
